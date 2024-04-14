@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  whoami:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-04-14T23:05:41.5539693Z"
+    description: A Helm chart deploying whoami for testing purposes
+    digest: ca04d482d903226757a54bff53dbb16b883ac24ff74144f4db41f26d2fab5ddd
+    keywords:
+    - whoami
+    name: whoami
+    urls:
+    - https://github.com/ttauveron/helm-charts/releases/download/whoami-0.0.2/whoami-0.0.2.tgz
+    version: 0.0.2
+generated: "2024-04-14T23:05:41.553975321Z"
