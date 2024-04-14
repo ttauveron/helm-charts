@@ -1,0 +1,4 @@
+ingress:
+  enabled: false
+  applicationHostname: whoami.mydomain.com
+  ingressControllerHostname: nginx.mydomain.com
