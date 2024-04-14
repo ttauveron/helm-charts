@@ -1,0 +1,114 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: admin
+  namespace: {{ .Release.Namespace }}
+spec:
+  issuerRef:
+    group: cert-manager.io
+    kind: Issuer
+    name: wazuh-issuer
+  secretName: admin-tls
+  commonName: admin
+  dnsNames:
+    - "admin"
+  usages:
+    - "signing"
+    - "key encipherment"
+    - "server auth"
+    - "client auth"
+  duration: 2160h
+  renewBefore: 360h
+  isCA: false
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+    rotationPolicy: Always
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: dashboard
+  namespace: {{ .Release.Namespace }}
+spec:
+  issuerRef:
+    group: cert-manager.io
+    kind: Issuer
+    name: wazuh-issuer
+  secretName: dashboard-tls
+  commonName: dashboard
+  dnsNames:
+    - "dashboard"
+  usages:
+    - "signing"
+    - "key encipherment"
+    - "server auth"
+    - "client auth"
+    - digital signature
+  duration: 2160h
+  renewBefore: 360h
+  isCA: false
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+    rotationPolicy: Always
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: filebeat
+  namespace: {{ .Release.Namespace }}
+spec:
+  issuerRef:
+    group: cert-manager.io
+    kind: Issuer
+    name: wazuh-issuer
+  secretName: filebeat-tls
+  commonName: filebeat
+  dnsNames:
+    - "filebeat"
+  usages:
+    - "signing"
+    - "key encipherment"
+    - "server auth"
+    - "client auth"
+    - digital signature
+  duration: 2160h
+  renewBefore: 360h
+  isCA: false
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+    rotationPolicy: Always
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: node
+  namespace: {{ .Release.Namespace }}
+spec:
+  issuerRef:
+    group: cert-manager.io
+    kind: Issuer
+    name: wazuh-issuer
+  secretName: node-tls
+  commonName: "*.wazuh-indexer"
+  dnsNames:
+    - "*.wazuh-indexer"
+  usages:
+    - "signing"
+    - "key encipherment"
+    - "server auth"
+    - "client auth"
+    - digital signature
+  duration: 2160h
+  renewBefore: 360h
+  isCA: false
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    size: 2048
+    rotationPolicy: Always

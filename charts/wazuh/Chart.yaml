@@ -1,0 +1,17 @@
+apiVersion: v2
+name: wazuh
+version: 0.0.30
+appVersion: 4.7.3
+description: Wazuh is centralized Security Information Event Management(SIEM) and Vulnerability inteligence and threat monitoring application
+keywords:
+  - whoami
+keywords:
+  - security
+  - information
+  - threat
+  - management
+  - centralized
+  - kubernetes
+  - wazuh
+  - opendistro
+  - elasticsearch
