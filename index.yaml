@@ -1,5 +1,26 @@
 apiVersion: v1
 entries:
+  wazuh:
+  - apiVersion: v2
+    appVersion: 4.7.3
+    created: "2024-04-14T23:48:03.849234081Z"
+    description: Wazuh is centralized Security Information Event Management(SIEM)
+      and Vulnerability inteligence and threat monitoring application
+    digest: 5f1b35d084dfd434eb133d20a03e414f308b8d1e0c21c48bb31df73ede9c1fcd
+    keywords:
+    - security
+    - information
+    - threat
+    - management
+    - centralized
+    - kubernetes
+    - wazuh
+    - opendistro
+    - elasticsearch
+    name: wazuh
+    urls:
+    - https://github.com/ttauveron/helm-charts/releases/download/wazuh-0.0.30/wazuh-0.0.30.tgz
+    version: 0.0.30
   whoami:
   - apiVersion: v2
     appVersion: 0.0.1
@@ -12,4 +33,4 @@ entries:
     urls:
     - https://github.com/ttauveron/helm-charts/releases/download/whoami-0.0.2/whoami-0.0.2.tgz
     version: 0.0.2
-generated: "2024-04-14T23:05:41.553975321Z"
+generated: "2024-04-14T23:48:03.849243889Z"
