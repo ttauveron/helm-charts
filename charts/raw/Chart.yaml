@@ -1,4 +1,4 @@
 apiVersion: v2
 description: A place for all the Kubernetes resources which don't already have a home
 name: raw
-version: 0.0.1
+version: 1.0.0
