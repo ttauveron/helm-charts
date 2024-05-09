@@ -17,7 +17,7 @@ metadata:
   name: wazuh-indexer
   namespace: {{ .Release.Namespace }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.indexer.replicas }}
   selector:
     matchLabels:
       app: wazuh-indexer
