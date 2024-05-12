@@ -1,6 +1,7 @@
 apiVersion: v1
 data:
   dummy-key: dummy-value
+  param: {{ .Values.test }}
 kind: ConfigMap
 metadata:
   name: dummy-{{ .Release.Name }}
