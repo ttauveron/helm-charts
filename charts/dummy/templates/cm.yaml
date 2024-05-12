@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  dummy-key: dummy-value
+kind: ConfigMap
+metadata:
+  name: dummy-{{ .Release.Name }}
+  namespace: {{ .Release.Namespace }}
