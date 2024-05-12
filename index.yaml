@@ -1,5 +1,17 @@
 apiVersion: v1
 entries:
+  dummy:
+  - apiVersion: v2
+    appVersion: 0.0.1
+    created: "2024-05-12T12:39:06.288894773Z"
+    description: A dummy Helm chart
+    digest: 2ad0beb01477546eea8b9be09fea9c0ec4483be8735fbf4cad59af0471eaeff7
+    keywords:
+    - dummy
+    name: dummy
+    urls:
+    - https://github.com/ttauveron/helm-charts/releases/download/dummy-0.0.1/dummy-0.0.1.tgz
+    version: 0.0.1
   raw:
   - apiVersion: v2
     created: "2024-05-09T02:24:42.298731425Z"
@@ -63,4 +75,4 @@ entries:
     urls:
     - https://github.com/ttauveron/helm-charts/releases/download/whoami-0.0.2/whoami-0.0.2.tgz
     version: 0.0.2
-generated: "2024-05-09T02:24:42.298785426Z"
+generated: "2024-05-12T12:39:06.288907487Z"
